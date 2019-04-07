@@ -8,6 +8,8 @@
 <script>
 export default {
   methods: {
+    // どこで動的に配列が作られるのか。
+    // 多分addMemo
     onClick() {
       this.$emit('clicked')
     }
