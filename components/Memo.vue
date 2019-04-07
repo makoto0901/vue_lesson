@@ -8,7 +8,7 @@
     <drag-handler />
     <text-box
       :text="text"
-      @inputed="onInputed" />
+      @inputed1="onInputed" />
   </div>
 </template>
 
@@ -37,7 +37,8 @@ export default {
   },
   methods: {
     onInputed(text) {
-      this.$emit('inputed', text)
+          console.log("Memo onInputed")
+      this.$emit('inputed1', text)
     }
   }
 }

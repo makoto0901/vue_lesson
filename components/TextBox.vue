@@ -14,9 +14,12 @@ export default {
       required: true
     }
   },
+  // index.vueのinputedを発火させているみたいだが、なぜMemoにも必要なのか。
+  // わかった。TextBoxではMemoのinputed1に繋がっている模様。
   methods: {
     onInput(e) {
-      this.$emit('inputed', e.target.value)
+      console.log("TextBox onInput")
+      this.$emit('inputed1', e.target.value)
     }
   }
 }
